@@ -1,0 +1,2 @@
+CREATE TABLE pessoas (id integer, cpf varchar(255), dataNascimento date, email varchar(255), idade integer, nome varchar(255), primary key (id));
+CREATE TABLE produtos (id integer, nome varchar(255), preco float not null, quantidade integer, status boolean not null, primary key (id));
