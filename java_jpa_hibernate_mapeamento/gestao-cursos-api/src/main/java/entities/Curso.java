@@ -17,7 +17,7 @@ public class Curso {
     private Professor professor;
 
     @OneToOne(mappedBy = "curso", cascade = CascadeType.ALL)
-    private Material material;
+    private MaterialCurso materialCurso;
 
     @ManyToMany
     @JoinTable(name = "curso_aluno",
@@ -49,12 +49,12 @@ public class Curso {
         this.professor = professor;
     }
 
-    public Material getMaterial() {
-        return material;
+    public MaterialCurso getMaterial() {
+        return materialCurso;
     }
 
-    public void setMaterial(Material material) {
-        this.material = material;
+    public void setMaterial(MaterialCurso materialCurso) {
+        this.materialCurso = materialCurso;
     }
 
     public List<Aluno> getAlunos() {

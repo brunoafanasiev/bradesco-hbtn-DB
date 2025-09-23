@@ -29,13 +29,13 @@ public class GestaoCursosMain {
             curso.setProfessor(professor);
 
             // Criar material do curso
-            Material material = new Material();
-            material.setDescricao("Livro: Algoritmos em Java");
-            material.setCurso(curso);
-            curso.setMaterial(material);
+            MaterialCurso materialCurso = new MaterialCurso();
+            materialCurso.setDescricao("Livro: Algoritmos em Java");
+            materialCurso.setCurso(curso);
+            curso.setMaterial(materialCurso);
 
             em.persist(curso);
-            em.persist(material);
+            em.persist(materialCurso);
 
             // Criar aluno
             Aluno aluno = new Aluno();

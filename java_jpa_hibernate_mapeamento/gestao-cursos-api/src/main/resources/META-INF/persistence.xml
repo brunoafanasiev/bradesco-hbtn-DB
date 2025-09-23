@@ -13,7 +13,7 @@
     <class>entities.Telefone</class>
     <class>entities.Professor</class>
     <class>entities.Curso</class>
-    <class>entities.Material</class>
+    <class>entities.MaterialCurso</class>
 
     <!-- Configurações de conexão -->
     <properties>
