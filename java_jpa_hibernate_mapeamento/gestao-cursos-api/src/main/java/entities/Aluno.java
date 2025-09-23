@@ -2,6 +2,7 @@ package entities;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +12,13 @@ public class Aluno {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nome;
+    private String nomeCompleto;
+
+    private String Matricula;
+
+    private LocalDate dataNascimento;
+
+    private String email;
 
     @OneToMany(mappedBy = "aluno", cascade = CascadeType.ALL)
     private List<Endereco> enderecos = new ArrayList<>();
@@ -30,12 +37,12 @@ public class Aluno {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeCompleto() {
+        return nomeCompleto;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeCompleto(String nomeCompleto) {
+        this.nomeCompleto = nomeCompleto;
     }
 
     public List<Endereco> getEnderecos() {
@@ -60,5 +67,29 @@ public class Aluno {
 
     public void setCursos(List<Curso> cursos) {
         this.cursos = cursos;
+    }
+
+    public String getMatricula() {
+        return Matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        Matricula = matricula;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 }

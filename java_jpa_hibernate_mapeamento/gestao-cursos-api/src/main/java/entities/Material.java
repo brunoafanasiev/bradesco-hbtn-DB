@@ -8,6 +8,8 @@ public class Material {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String url;
+
     private String descricao;
 
     @OneToOne

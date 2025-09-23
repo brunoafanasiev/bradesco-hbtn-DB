@@ -39,11 +39,11 @@ public class GestaoCursosMain {
 
             // Criar aluno
             Aluno aluno = new Aluno();
-            aluno.setNome("Carlos Silva");
+            aluno.setNomeCompleto("Carlos Silva");
 
             // Criar endereço
             Endereco endereco = new Endereco();
-            endereco.setRua("Rua das Flores");
+            endereco.setLogradouro("Rua das Flores");
             endereco.setCidade("São Paulo");
             endereco.setAluno(aluno);
             aluno.getEnderecos().add(endereco);

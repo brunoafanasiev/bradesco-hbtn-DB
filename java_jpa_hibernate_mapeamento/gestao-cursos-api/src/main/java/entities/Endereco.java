@@ -8,8 +8,13 @@ public class Endereco {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String rua;
+    private String logradouro;
+    private String endereco;
+    private String numero;
+    private String bairro;
     private String cidade;
+    private String estado;
+    private String cep;
 
     @ManyToOne
     private Aluno aluno;
@@ -22,12 +27,12 @@ public class Endereco {
         this.id = id;
     }
 
-    public String getRua() {
-        return rua;
+    public String getLogradouro() {
+        return logradouro;
     }
 
-    public void setRua(String rua) {
-        this.rua = rua;
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
     }
 
     public String getCidade() {
