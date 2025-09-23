@@ -18,6 +18,8 @@ public class Aluno {
 
     private LocalDate dataNascimento;
 
+    private String nascimento;
+
     private String email;
 
     @OneToMany(mappedBy = "aluno", cascade = CascadeType.ALL)
@@ -93,4 +95,11 @@ public class Aluno {
         this.dataNascimento = dataNascimento;
     }
 
+    public String getNascimento() {
+        return nascimento;
+    }
+
+    public void setNascimento(String nascimento) {
+        this.nascimento = nascimento;
+    }
 }
