@@ -20,7 +20,7 @@ public class GestaoCursosMain {
 
             // Criar professor
             Professor professor = new Professor();
-            professor.setNome("Prof. Ana Costa");
+            professor.setNomeCompleto("Prof. Ana Costa");
             em.persist(professor);
 
             // Criar curso

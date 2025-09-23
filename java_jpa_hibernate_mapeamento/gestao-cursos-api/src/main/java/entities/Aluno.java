@@ -14,7 +14,7 @@ public class Aluno {
 
     private String nomeCompleto;
 
-    private String Matricula;
+    private String matricula;
 
     private LocalDate dataNascimento;
 
@@ -70,11 +70,11 @@ public class Aluno {
     }
 
     public String getMatricula() {
-        return Matricula;
+        return matricula;
     }
 
     public void setMatricula(String matricula) {
-        Matricula = matricula;
+        this.matricula = matricula;
     }
 
     public String getEmail() {
@@ -92,4 +92,6 @@ public class Aluno {
     public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
+
+
 }
